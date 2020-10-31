@@ -1,0 +1,165 @@
+/*Eliminamos los margenes y paddings que agrega el navegador
+ por defecto*/     
+* {
+  margin:0px;
+   padding:0;
+ }
+      
+#header {
+  margin:auto;
+  font-family:Arial, Helvetica, sans-serif;/*--tipo de letra--*/
+  background:black; /*--color q acompleta menu*/
+  width: 100%;
+  position: fixed;
+}
+      
+ul, ol {
+  list-style:none;/*-- elimina los puntos de lalista*/
+}
+      
+.nav > li {
+  float:left;/*--pone el contenido a la izq/derech--*/
+}
+      
+.nav li a {
+  background-color:black;/*--color del fondo menu*/
+  color:white;/*--color de letra--*/
+  text-decoration:none;/*--no tenga decoraciones*/
+  padding:13px 13px;/*--tamaño del menu*/
+  display:block;/*--para que no see junten los cuadros menu*/
+}
+      
+.nav li a:hover {
+  background-color:grey;/*--color al pasar el puntero*/
+}
+      
+.nav li ul {/*--oculta los submenus, tamaño de distancia*/
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+      
+.nav li:hover > ul {/*--muestre los submenus*/
+  display:block;
+}
+      
+.contenido {
+  marging-botton:1em;
+}
+
+p#red{
+  color:black;
+}
+
+p{
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+table td{
+  text-align: center;
+  color:white; 
+}
+
+table{
+  background:black
+}
+
+body{
+  background-color:;
+}
+
+
+h1,h2{
+  color:black; 
+}
+
+
+
+
+/*--buscador*/
+
+.demo .form-search, .demo-2 .form-search {/*--ubicacion del buscador--*/
+  position:absolute;
+  right:40px;
+  top:0px;
+}
+.demo .form-search input[type=text],/*--dentro del cuadro de bqda--*/
+.demo-2 .form-search input[type=text] {
+  font-family: inherit;
+  font-size: 100%;
+  border: solid 1px black;
+  padding: 10px 10px;
+  width: 200px;
+  transition: all .5s;   
+}
+
+
+
+/*-- se ponga ancho--*/
+.demo .form-search input[type=text]:focus {
+  width: 350px;
+  background-color:white;
+}
+
+.demo .form-search button.btn,/*--tamaño y borde*/
+.demo-2 .form-search button.btn {
+  padding:12px 12px;
+  border-top-right-radius:4px;
+  border-bottom-right-radius: 4px;
+}
+
+section{
+  background-color:white;
+  float:left;
+  width:850px;
+  height:1200px;
+  margin-bottom:10px;
+  margin-right:10px;  
+  ;
+}
+
+
+#article-two{
+  text-align:center;
+  margin-right:10px;
+  margin-left:10px;
+  margin-bottom:20px;
+  background-color:grey;
+  font-size:40px;
+}
+
+#p1{
+  text-align: left;
+  margin-left:10px;
+  font-size:30px;
+}
+#p2{
+  text-align: left;
+  margin-left:10px;
+}
+#vid{
+  text-align:left;
+  margin-right:5px;
+  margin-left:5px;
+
+}
+
+footer
+{
+  margin-top:100px;
+  width:100%;
+  height:300px;
+  background-color:black;
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+  body{  
+    background-color:#555;  
+    font-family: Times New Roman;  
+  }  
+  header h3{  
+   text-align:center;  
+  } 
+}
+
